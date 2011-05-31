@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Dancer-Plugin-TimeRequests
-version:            0.01
+version:            0.02
 abstract:           log how long each request took to process
 author:
     - David Precious <davidp@preshweb.co.uk>
@@ -11,6 +11,7 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
+    Dancer:       1.305
     Test::More:   0
     Time::HiRes:  0
 no_index:
