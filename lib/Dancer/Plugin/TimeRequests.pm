@@ -5,7 +5,7 @@ use Dancer::Plugin;
 use Dancer qw(:syntax);
 use Time::HiRes;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
@@ -33,11 +33,11 @@ showing how logn each request took:
 
 =cut
 
-before sub {
+hook before => sub {
     var request_start_time => Time::HiRes::time();
 };
 
-after sub {
+hook after => sub {
     Dancer::Logger::debug(sprintf "Request to %s completed in %.4f seconds",
         request->path,
         Time::HiRes::time() - vars->{request_start_time}
