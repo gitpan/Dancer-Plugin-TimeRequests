@@ -1,5 +1,5 @@
 ---
-abstract: 'log how long each request took to process'
+abstract: 'log how long requests take and which routes are slow'
 author:
   - 'David Precious <davidp@preshweb.co.uk>'
 build_requires:
@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 0
 dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150'
+generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,4 +21,4 @@ requires:
   Dancer: 1.305
   Test::More: 0
   Time::HiRes: 0
-version: 0.03
+version: 0.04
