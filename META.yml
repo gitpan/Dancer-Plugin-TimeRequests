@@ -20,6 +20,7 @@ no_index:
 requires:
   Dancer: 1.305
   HTML::Table: 0
+  List::MoreUtils: 0
   Test::More: 0
   Time::HiRes: 0
-version: 0.05
+version: 0.06
